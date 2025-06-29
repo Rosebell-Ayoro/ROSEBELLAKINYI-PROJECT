@@ -1,0 +1,99 @@
+body.light{
+    --primary-bg-color:#f8f9fa;
+    --secondary-bg-color:#ffffff;
+    --text-color:#333;
+    --heading-color:#212529;
+    --border-color:#dee2e6;
+    --button-bg:#007bff;
+    --button-text:#fff;
+    --button-hover-bg:#0056b3;
+    --card-bg:#ffffff;
+    --error-color:#dc3545;
+    --success-color:#28a745;
+}
+body.dark{
+    --primary-bg-color:#282c34;
+    --secondary-bg-color:#3b3f46;
+    --text-color:#e0e0e0;
+    --heading-color:#f8f8f2;
+    --border-color:#4a4d52;
+    --button-bg:#61dafb;
+    --button-text:#282c34;
+    --button-hover-bg:#21a1f1;
+    --card-bg:#3b3f46;
+    --error-color:#ff6b6b;
+    --success-color:#6eff6e;
+}
+body{
+    margin: 0;
+    font-family: 'arial',sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
+}
+.form-group{
+    margin-bottom: 15px;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--heading-color);
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="date"],
+.form-group textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--secondary-bg-color);
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+button{
+    padding: 10px 20px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-right: 10px;
+}
+button:hover{
+    background-color: var(--button-hover-bg);
+}
+.error-message{
+    color: var(--error-color);
+    margin-top: 10px;
+}
+.success-message{
+    color: var(--success-color);
+    margin-top: 10px;
+}
+.login-container, .register-container, .lesson-plan-container, .schemes-of-work-container, .record-of-work-container, .feedback-container{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0, 1);
+}
+.lesson-card, .scheme-card, .record-card{
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0, 05);
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    margin-bottom: 10px;
+}
