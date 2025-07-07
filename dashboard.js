@@ -5,7 +5,7 @@ import StudentProgressBar from './components/StudentProgressBar';
 export default function Dashboard() {
   return (
     <div className="min-h-screen bg-gray-100 p-6">
-      <h1 className="text-4xl font-bold mb-8 text-center text-blue-700">Welcome to My Educationg Automation System</h1>
+      <h1 className="text-4xl font-bold mb-8 text-center text-blue-700">Welcome to My Education Automation System</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
